@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Roma Italy</title>
+  <style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  a:link, a:active, a:visited {
+  	color: #af670a;
+  	text-decoration: none;
+  	}
+
+  a:hover {
+  	color: #227115;
+  	}
+
+  a img {
+  	border: none;
+  	}
+  ul,li {
+    list-style-type: none;
+  }
+  body {
+    background: #f1efe8 url(./img/bg-dark.jpg) repeat-x;
+  }
+   #content-wrapper {
+     width: 1070px;
+     margin: 0 auto;
+   }
+   #main {
+     width: 710px;
+     float: left;
+     margin: 36px 10px 40px 0;
+   }
+   #secondary {
+     width: 350px;
+     float: left;
+     margin-top: 36px;
+   }
+   header ul {
+     margin: 20px 25px 63px;
+   }
+   header ul li a {
+     color: #fff;
+   }
+   #main .carousel {
+     width: 710px;
+     height: 320px;
+     overflow: hidden;
+     background: #fff;
+   }
+   #main .featurette {
+     min-height: 190px;
+     background: url(./img/bg-colosseo-overlay.jpg) no-repeat left 21px, url(./img/bg-colosseo.jpg) no-repeat;
+     background-color: #f1efe8;
+   }
+   #main .video {
+     float: left;
+     margin-left: 25px;
+     width: 310px;
+   }
+   #main .interactive {
+     float: left;
+     margin-left: 37px;
+     width: 310px;
+   }
+   #main .popular {
+   	clear: left;
+   	float: left;
+   	margin: 45px 0 0 25px;
+   	width: 310px;
+   	}
+
+   #main .popular ul {
+   	float: left;
+   	width: 50%;
+   	margin-top: 13px;
+   	font-size: 11px;
+   	color: #36332a;
+   	}
+
+   #main .popular li {
+   	padding: 2px 0;
+   	}
+
+   #main .popular a:link, #main .popular a:active, #main .popular a:visited {
+   	color: #36332a;
+   	}
+
+   #main .popular a:hover {
+   	color: #227115;
+   	}
+
+   #main .popular a strong {
+   	padding-right: 8px;
+   	background: url(./img/arrow-black.png) no-repeat right center;
+   	}
+    #main .voices {
+    	float: left;
+    	margin: 45px 0 0 37px;
+    	width: 310px;
+    	}
+
+    #main .voices ul {
+    	position: relative;
+    	width: 310px;
+    	height: 178px;
+    	background: url(./img/bg-map.gif) no-repeat;
+    	}
+
+    #main .voices ul li.l1 {
+    	position: absolute;
+    	padding-top: 16px;
+    	background: url(./img/mapmarker-dot.png) no-repeat 2px top;
+    	}
+
+    #main .voices ul li.l1 a {
+    	display: block;
+    	padding-left: 11px;
+    	font: 11px/14px Georgia, serif;
+    	color: #32312a;
+    	-webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.35);
+    	-moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.35);
+    	background-color: rgba(255, 255, 255, 0.78);
+    	}
+
+    #main .voices ul li.l1 a em {
+    	display: block;
+    	padding: 7px 8px 3px 2px;
+    	height: 19px;
+    	text-indent: -.3em;
+    	}
+
+    /* CSS3 text-overflow
+    See http://www.css3.info/preview/text-overflow */
+    #main .voices ul li.l1 a em {
+    	white-space: nowrap;
+    	width: 135px;
+    	overflow: hidden;
+    	text-overflow: ellipsis;
+    	-o-text-overflow: ellipsis;
+    	-khtml-text-overflow: ellipsis;
+    	-moz-text-overflow: ellipsis;
+    	-webkit-text-overflow: ellipsis;
+    	}
+
+    /* Display the full text on mouseover */
+    #main .voices ul li.l1 a em:hover {
+    	white-space: normal;
+    	overflow: visible;
+    	cursor: hand;
+    	cursor: pointer;
+    	background: #fff none;
+    	height: 72px;
+    	padding-left: 11px;
+    	padding-bottom: 5px;
+    	margin-left: -9px;
+    	}
+
+    #main .voices ul li.l2 {
+    	position: absolute;
+    	padding-top: 16px;
+    	background: url(./img/mapmarker-dot-alt.png) no-repeat 129px top;
+    	}
+
+    #main .voices ul li.l2 a {
+    	display: block;
+    	padding-right: 11px;
+    	font: 11px/14px Georgia, serif;
+    	color: #32312a;
+    	-webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.35);
+    	-moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.35);
+    	background-color: rgba(255, 255, 255, 0.78);
+    	}
+
+    #main .voices ul li.l2 a em {
+    	display: block;
+    	padding: 7px 0 3px 10px;
+    	height: 19px;
+    	text-indent: -.3em;
+    	}
+
+    /* CSS3 text-overflow
+    See http://www.css3.info/preview/text-overflow */
+    #main .voices ul li.l2 a em {
+    	white-space: nowrap;
+    	width: 135px;
+    	overflow: hidden;
+    	text-overflow: ellipsis;
+    	-o-text-overflow: ellipsis;
+    	-khtml-text-overflow: ellipsis;
+    	-moz-text-overflow: ellipsis;
+    	-webkit-text-overflow: ellipsis;
+    	}
+
+    /* Display the full text on mouseover */
+    #main .voices ul li.l2 a em:hover {
+    	white-space: normal;
+    	overflow: visible;
+    	text-overflow: inherit;
+    	-o-text-overflow: inherit;
+    	cursor: hand;
+    	cursor: pointer;
+    	background: #fff none;
+    	height: 72px;
+    	padding-right: 11px;
+    	padding-bottom: 5px;
+    	margin-right: -11px;
+    	}
+
+    #main .voices p {
+    	text-align: right;
+    	}
+
+    #main .voices p a {
+    	margin-left: 10px;
+    	font-size: 10px;
+    	padding-right: 8px;
+    	background: url(./img/arrow-orange.png) no-repeat right center;
+    	}
+
+      #secondary .feature {
+        height: 320px;
+        background: #c27e28 url(./img/feature-orange.jpg);
+      }
+      #secondary .featurette {
+        margin-top: 21px;
+        padding: 15px 27px 0 27px;
+        height: 104px;
+        font-size: 11px;
+        background: url(./img/bg-noise.jpg) no-repeat;
+      }
+      #secondary .photos {
+      	padding: 50px 0 0 27px;
+      	min-height: 500px;
+      	background: url(./img/bg-secondary.jpg) no-repeat;
+      	}
+
+      #secondary .photos h3 {
+      	margin-bottom: 18px;
+      	color: #36332a;
+      	font-size: 14px;
+      	text-transform: uppercase;
+      	}
+
+      #secondary .photos a {
+      	float: left;
+      	padding: 10px 5px 10px 15px;
+      	width: 122px;
+      	height: 121px;
+      	}
+
+      #secondary .photos img {
+      	padding: 13px 15px 15px 14px;
+      	background: url(./img/thumb-frame.png) no-repeat;
+      	}
+
+
+      .popular a:hover {
+       border-bottom: 1px solid #d5cfc0;
+       }
+       /*
+       FOOTER ---------------------------- */
+
+       footer {
+       	clear: left;
+       	padding: 40px 0 60px;
+       	min-height: 0;
+       	color: #8a867c;
+       	font-size: 10px;
+       	text-align: center;
+       	background: url(./img/bg-footer.gif) no-repeat center top;
+       	}
+
+       footer p {
+       	padding-bottom: 8px;
+       	}
+
+       .footer-links {
+       	margin-bottom: 10px;
+       	}
+
+       .footer-links a {
+       	padding: 0 10px;
+       	}
+
+       footer #cameronmoll {
+       	margin: 20px auto 0;
+       	width: 124px;
+       	}
+  </style>
+</head>
+<body>
+  <div id="content-wrapper">
+    <header>
+      <ul>
+        <li><a href="#">home</a></li>
+      </ul>
+    </header>
+    <div id="main">
+      <div class="carousel"></div>
+      <div class="featurette"></div>
+      <div class="video">
+        <h3>ROMA ITALIA</h3>
+        <a href="#">
+          <img src="./img/bigthumb-video.jpg" alt="Frame from the Roma Italia">
+        </a>
+      </div>
+      <div class="interactive">
+        <h3>ROMA ITALIA</h3>
+        <a href="#">
+          <img src="./img/bigthumb-map.jpg" alt="Frame from the Roma Italia">
+        </a>
+      </div>
+      <div class="popular">
+        <h3>POPULAR DESTINATIONS</h3>
+        <ul>
+  				<li><a href="#">The Colosseum</a></li>
+  				<li><a href="#">The Pantheon</a></li>
+  				<li><a href="#">St. Peter&rsquo;s Basilica</a></li>
+  				<li><a href="#">Vatican City</a></li>
+  				<li><a href="#">Sistine Chapel</a></li>
+  				<li><a href="#">Spanish Steps</a></li>
+  				<li><a href="#">Trevi Fountain</a></li>
+  				<li><a href="#">Roman Roads</a></li>
+  			</ul>
+  			<ul>
+  				<li><a href="#">Roman Forum</a></li>
+  				<li><a href="#">The Aventine</a></li>
+  				<li><a href="#">Circus Maximus</a></li>
+  				<li><a href="#">Arch of Constantine</a></li>
+  				<li><a href="#">The Capitol</a></li>
+  				<li><a href="#">The Vittore Emanuele II</a></li>
+  				<li><a href="#">Castel St. Angelo</a></li>
+  				<li><a href="#"><strong>View all (76)</strong></a></li>
+  			</ul>
+      </div>
+      <div class="voices">
+        <h3>Voices Around the World</h3>
+        <ul>
+  				<li class="l1" id="map1" style="top: 80px; left: 55px;"><a href="#"><em>&ldquo;I couldn&rsquo;t get enough of the gelato. The flavors and texture are way different than anything we have here.&rdquo;</em></a></li>
+  				<li class="l1" id="map2" style="top: 61px; left: 53px;"><a href="#"><em>&ldquo;Absolutely divine. Don&rsquo;t skip the Il Vittoriano. Its size alone is impressive. There&rsquo;s a stunning view from the top.&rdquo;</em></a></li>
+  				<li class="l2" id="map3" style="top: 51px; right: 145px;"><a href="#"><em>&ldquo;Rawk. What a place. I'll definitely be coming back next summer. Same hotel. Rome FTW.&rdquo;</em></a></li>
+  				<li class="l1" id="map4" style="top: 72px; right: 15px;"><a href="#"><em>&ldquo;There are no wrong turns in Rome. Every path is a new adventure. Ignore the map once in a while.&rdquo;</em></a></li>
+  				<li class="l2" id="map5" style="top: 132px; right: 12px;"><a href="#"><em>&ldquo;I&rsquo;ve seen the Colosseum in photos, but it's SO much more stunning in person. Set aside an entire day to view it.&rdquo;</em></a></li>
+  				<li class="l2" id="map6" style="top: 50px; right: 131px;"><a href="#"><em>&ldquo;L&rsquo;Archetto di Cavour on Via Cavour is one of the best restaurants in downtown Rome. Anything on the menu.&rdquo;</em></a></li>
+  				<li class="l2" id="map7" style="top: 60px; right: 30px;"><a href="#"><em>&ldquo;Visit the Trevi fountain at night. Most of the tourists clear out around 10pm. Beautiful at night.&rdquo;</em></a></li>
+  			</ul>
+  			<p>
+  			  <a href="#">View all</a> <a href="#">Share</a> <a href="http://twitter.com/roma_italia"><strong>Follow @roma_italia</strong></a>
+        </p>
+      </div>
+    </div>
+    <div id="secondary">
+      <div class="feature">
+      </div>
+      <div class="featurette">
+      </div>
+      <div class="photos">
+        <h3>Photo Galleries</h3>
+  			<a href="#"><img src="img/thumb-sistine.jpg" alt="Thumbnail photo of the Sistine Chapel" width="93" height="93"></a>
+  			<a href="#"><img src="img/thumb-vatican.jpg" alt="Thumbnail photo of St Peter's Square" width="93" height="93"></a>
+  			<a href="#"><img src="img/thumb-arch.jpg" alt="Thumbnail photo of the Arch of Constantine" width="93" height="93"></a>
+  			<a href="#"><img src="img/thumb-trajan.jpg" alt="Thumbnail photo of Trajan's Column" width="93" height="93"></a>
+  			<a href="#"><img src="img/thumb-soldier.jpg" alt="Thumbnail photo of Roman soldier" width="93" height="93"></a>
+  			<a href="#"><img src="img/thumb-focaccia.jpg" alt="Thumbnail photo of the Italian food" width="93" height="93"></a>
+      </div>
+    </div>
+    <footer>
+      <p class="footer-links">
+  		<a href="#">Home</a> <a href="#">Map of Rome</a> <a href="#">Destinations</a> <a href="#">Hotels</a> <a href="video.html">Videos</a> <a href="#">Photos</a> <a href="#">Voices Around the World</a> <a href="&#0109;&#97;&#105;&#108;&#116;&#111;&#58;&#98;o&#114;&#0101;&#0100;&#064;&#099;&#97;&#109;&#101;&#114;&#111;&#110;&#109;&#0111;&#108;&#0108;&#046;&#99;&#0111;&#109;?subject=Hey%20Cameron, about%20Roma%20Italia...">Contact Us</a><p>
+  		<p>
+  		&copy; 2009 <a href="http://cameronmoll.com/">Cameron Moll</a>. All rights reserved.</p>
+  		<p>
+  		This is a fictitious website created strictly for educational purposes and may not be reproduced without permission.</p>
+  		<p>
+  		<strong>Buy the book at Amazon: <a href="http://bit.ly/cssmastery"><em>CSS Mastery</em></a></strong></p>
+  		<div id="cameronmoll"><a href="http://cameronmoll.com/"><img src="img/cameronmoll.png" alt="Cameron Moll" width="124" height="23"></a></div>
+    </footer>
+  </div>
+</body>
+</html>

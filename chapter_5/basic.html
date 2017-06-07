@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>锚类型选择器</title>
+  <style>
+    /*
+      change
+     */
+    .change a {
+      color: #999;
+      text-decoration: none;
+    }
+    .change a:link {
+      color: #333;
+    }
+    .change a:visited {
+      color: #0000ff;
+    }
+    .change a:hover {
+      color: #ff0000;
+    }
+    .change a:active {
+      color: #00ff00;
+    }
+    /*
+      reverse
+     */
+    .reverse a {
+      color: #999;
+      text-decoration: none;
+    }
+    .reverse a:hover {
+      color: #ff0000;
+    }
+    .reverse a:active {
+      color: #00ff00;
+    }
+    .reverse a:link {
+      color: #333;
+    }
+    .reverse a:visited {
+      color: #0000ff;
+    }
+  </style>
+</head>
+<body>
+  <h2>一、普通的a链接</h2>
+  <ul>
+    <li>下划线</li>
+    <li>未被访问是蓝色</li>
+    <li>已被访问是紫色</li>
+    <li>激活时是红色</li>
+  </ul>
+  <p>
+    <label for="basic">basic</label>
+    <a href="#1" name="basic">I'm basic</a>
+  </p>
+  <h2>二、使用锚类型选择器</h2>
+  <ul>
+    <li>link:未被访问是黑色</li>
+    <li>visited:已被访问是蓝色</li>
+    <li>hover:悬停是红色</li>
+    <li>active:激活是绿色</li>
+  </ul>
+  <p class="change">
+    <label for="change">change</label>
+    <a href="#2" name="change">I'm changed</a>
+  </p>
+  <h2>三、link,visited覆盖了hover,active的样式</h2>
+  <ul>
+    <li>link:未被访问是黑色</li>
+    <li>visited:已被访问是蓝色</li>
+    <li>hover:悬停是红色，无效</li>
+    <li>active:激活是绿色，无效</li>
+  </ul>
+  <p class="reverse">
+    <label for="reverse">reverse</label>
+    <a href="#3" name="reverse">I'm reverse</a>
+  </p>
+</body>
+</html>

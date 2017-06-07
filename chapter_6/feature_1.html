@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>更多导航</title>
+  <style>
+    ul.nav-1 {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      width: 72em;
+      overflow: hidden;
+      background: #faa819 url(./img/mainNavBg.gif) repeat-x;
+    }
+    ul.nav-1 li {
+      float: left;
+    }
+    ul.nav-1 a {
+      display: block;
+      padding: 0 3em;
+      line-height: 2.1em;
+      text-decoration: none;
+      color: #fff;
+      background: url(./img/divider.gif) repeat-y left top;
+    }
+    ul.nav-1 li:first-child a{
+      background-image: none;
+    }
+    ul.nav-1 a:hover {
+      color: #333;
+    }
+    /*
+      nav-2
+     */
+    ul.nav-2 {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      width: 72em;
+      overflow: hidden;
+    }
+    ul.nav-2 li {
+      float: left;
+      background: url(./img/tab-right.gif) no-repeat right top;
+    }
+    ul.nav-2 li a {
+      display: block;
+      padding: 0 2em;
+      line-height: 2.5rem;
+      background: url(./img/tab-left.gif) no-repeat left top;
+      text-decoration: none;
+      color: #fff;
+    }
+    ul.nav-2 a:hover {
+      color: #333;
+    }
+    /*
+      nav-3
+     */
+    ul.nav-3, ul.nav-3 ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      overflow: hidden;
+      border: 1px solid #486b02;
+      background-color: #8bd400;
+    }
+    ul.nav-3 li {
+      float: left;
+      width: 8em;
+      background-color: #8bd400;
+    }
+    ul.nav-3 li ul {
+      width: 8em;
+      position: absolute;
+      left: -999em;
+    }
+    .nav-3 li:hover ul {
+      left: auto;
+    }
+    ul.nav-3 a {
+      display: block;
+      color: #2b3f00;
+      text-decoration: none;
+      padding: 0.3em 1em;
+      border-right: 1px solid #486b02;
+      border-left: 1px solid #e4ffd3;
+    }
+    ul.nav-3 li li a {
+      border-top: 1px solid #e4ffd3;
+      border-bottom: 1px solid #486b02;
+      border-left: 0;
+      border-right: 0;
+    }
+    ul.nav-3 li:last-child a {
+      border-bottom: 0;
+    }
+    ul.nav-3 a:hover {
+      color: #e4ffd3;
+      background-color: #6da203;
+    }
+  </style>
+</head>
+<body>
+  <h3>图形化导航</h3>
+  <ul class="nav-1">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">News</a></li>
+    <li><a href="#">Products</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Clients</a></li>
+    <li><a href="#">Case studies</a></li>
+  </ul>
+  <h3>滑动门标签页式导航</h3>
+  <ul class="nav-2">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">News</a></li>
+    <li><a href="#">Products</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Clients</a></li>
+    <li><a href="#">Case studies</a></li>
+  </ul>
+  <h3>下拉菜单</h3>
+  <ul class="nav-3">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Products</a>
+      <ul>
+        <li><a href="#">Silverback</a></li>
+        <li><a href="#">Font Deck</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Services</a>
+      <ul>
+        <li><a href="#">Design</a></li>
+        <li><a href="#">Development</a></li>
+        <li><a href="#">Consultancy</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Contact Us</a></li>
+  </ul>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>form表单</title>
+  <style>
+    fieldset {
+      margin: 1em 0;
+      padding: 1em;
+      border: 1px solid #ccc;
+      background: #f8f8f8;
+    }
+    legend {
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      cursor: pointer;
+    }
+    input {
+      width: 20em;
+    }
+    textarea {
+      width: 100%;
+      height: 10em;
+    }
+    input[type="text"] {
+      width: 20em;
+    }
+    input[type="text"]:focus, textarea:focus {
+      background: #ffc;
+    }
+    input[type="text"], textarea {
+      border-top: 2px solid #999;
+      border-left: 2px solid #999;
+      border-bottom: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <h2>基本布局</h2>
+  <fieldset>
+    <legend>Your Contact Details</legend>
+    <div>
+      <label for="author">Name:<em>(required)</em></label>
+      <input name="author" id="author" type="text">
+    </div>
+    <div>
+      <label for="email">Email Address:</label>
+      <input name="email" id="email" type="text">
+    </div>
+    <div>
+      <label for="url">Web Address:</label>
+      <input name="url" id="url" type="text">
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend>Comments</legend>
+    <div>
+      <label for="text">Message:</label>
+      <textarea name="text" id="text" cols="50" rows="10"></textarea>
+    </div>
+  </fieldset>
+</body>
+</html>
