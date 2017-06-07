@@ -3,7 +3,7 @@
 
 这本书的主要章节如下图所示
 
-![WechatIMG1](/Users/callback/Desktop/CSS-Mastery/img/WechatIMG1.jpeg)
+![WechatIMG1](./img/WechatIMG1.jpeg)
 
 
 
